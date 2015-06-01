@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffc2c2c2"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:weightSum="100">
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="50dp"
+            android:layout_weight="15"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/location_icon" />
+
+        <TextView
+            android:id="@+id/tvClientLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="80"
+            android:padding="5dp"
+            android:text="Finding You ...."
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvRestaurants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_below="@+id/linearLayout"
+        android:background="#ffbcbcbc"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"
+        android:paddingLeft="1.5dp"
+        android:paddingRight="1.5dp"
+        android:paddingTop="5dp" />
+
+</RelativeLayout>
